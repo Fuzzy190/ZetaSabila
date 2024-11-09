@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeta Sabila</title>
+</head>
+<style>
+    @font-face {
+    font-family: commodore64;
+    src: url(/fonts/Commodore-64-v6.3.TTF);
+    }
+
+    *{
+        font-family: commodore64, cursive;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        animation: outro 3s forwards 15s;
+        background-color: rgb(36, 54, 66);
+    }
+    h1{
+        text-transform: uppercase;
+    }
+
+    h3{
+        margin: 1%;
+        opacity: 0%;
+        font-size: 50px;
+        transition: 0.5s;
+        color: rgb(117, 36, 36);
+        text-shadow: 5px 5px 11px black;
+        animation: h3ColorAnim 10s forwards;
+    }
+
+    .name1{
+        color: rgb(85, 180, 209);
+    }
+
+    .name2{
+        color: rgb(74, 214, 132);
+        padding-left: 15px;
+    }
+
+    .nameContainer{
+        font-size: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        opacity: 0%;
+        animation: h1ColorAnim 15s forwards 5s;
+        background-color: black;
+        padding: 0 1% 0 1%;
+        border-radius: 10px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+
+        background: white;
+    }
+
+    @keyframes h3ColorAnim{
+        100%{opacity: 100%;}
+    }
+
+    @keyframes h1ColorAnim{
+        100%{opacity: 100%;}
+    }
+
+    @keyframes outro{
+        100%{opacity: 0%;}
+    }
+</style>
+<meta http-equiv="refresh" content="19; main_page.html">
+<body>
+    <div class="container">
+        <h3>My Heart</h3>
+        <div class="nameContainer">
+            <h1 class="name1">Zeta</h1>
+            <h1 class="name2">Sabila</h1>
+        </div>
+    </div>
+</body>
+</html>

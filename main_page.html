@@ -9,7 +9,7 @@
 <style>
     @font-face {
     font-family: lexend;
-    src: url(./fonts/Lexend-VariableFont_wght.ttf);
+    src: url(/fonts/Lexend-VariableFont_wght.ttf);
     }
     *{
         color: white;
@@ -26,20 +26,39 @@
         align-items: center;
     }
 
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        width: 40%;
+        padding: 1%;
+        border-radius: 10px;
+        opacity: 0%;
+        animation: h1Intro 10s forwards;
+    }
+
     .container{
-        width: 50%;
+        width: 30%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.7);
         margin-top: 3%;
-        padding: 2%;
+        padding: 0 2% 0 2%;
+        border: 2px solid black;
+        opacity: 0%;
+        animation: containerIntro 10s forwards 10s;
+    }
+
+    .container h2, .container p{
+        color: black;
     }
 
     .container h2{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .container p{
@@ -48,14 +67,52 @@
     }
 
     .container img,.container video{
-        width: 100%;
-        height: 500px;
+        width: 75%;
+        height: 400px;
         object-fit: cover;
+        border: 3px solid black;
+        background-color: black;
     }
 
     @keyframes intro {
         0%{opacity: 0%;}
         100%{opacity: 100%;}
+    }
+
+    @keyframes h1Intro {
+        0%{opacity: 0%;}
+        100%{opacity: 100%;}
+    }
+
+    @keyframes containerIntro  {
+        0%{opacity: 0%;}
+        100%{opacity: 100%;}
+    }
+
+    @media only screen and (max-width: 600px) {
+        h1{
+            font-size: 20px;
+            width: 80%;
+        }
+        
+        .container h2{
+            font-size: 20px;
+        }
+
+        .container p{
+            font-size: 10px;
+        }
+
+        .container{
+            width: 70%;
+        }
+
+        .container img,.container video{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border: 3px solid black;
+        }
     }
 </style>
 <body>
@@ -95,7 +152,7 @@
     <!--5-->
     <div class="container">
         <h2>Our first date</h2>
-        <video src="/images/file (5).mp4" autoplay></video>
+        <video src="/images/file (5).mp4" autoplay loop></video>
         <p>This is the time we just say... is this our first date??? and we just both agree so we ate together and during that time i just think it was an actual date but yeah im still looking forward to that first first date of ours... an actual one even we are here at the mall right now doing our first online dating hehe</p>
     </div>
     <!--6-->
